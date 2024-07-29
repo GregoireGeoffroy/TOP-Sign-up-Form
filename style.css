@@ -1,0 +1,12 @@
+body {
+    display: flex;
+}
+
+.leftpanel {
+    background-image: url(background.jpg)
+}
+
+.odinlogo {
+    padding: 0 100px;
+    margin: 100px;
+}
