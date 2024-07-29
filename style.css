@@ -1,12 +1,107 @@
+@font-face {
+    font-family: norse-bold;
+    src: url(Norse-Bold.otf);
+}
+
 body {
     display: flex;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
 .leftpanel {
-    background-image: url(background.jpg)
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 35%;
+    position: relative;
 }
 
 .odinlogo {
-    padding: 0 100px;
-    margin: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.42); /* Grey transparent background */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.odinlogo img {
+    width: 100px;
+    height: auto;
+}
+
+.odinlogo h1 {
+    margin: 0;
+    margin-left: 32px;
+    color: white;
+    font-family: norse-bold, sans-serif;
+    font-size: 75px;
+}
+
+.rightpanel {
+    width: 65%;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.rightpanel p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+form p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+form .form-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+form .form-group div {
+    flex: 1 1 45%;
+}
+
+form label {
+    display: block;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+form input {
+    width: 75%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #596D48;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: green;
+}
+
+.rightpanel a {
+    color: #596D48;
+    text-decoration: none;
+}
+
+.rightpanel a:hover {
+    text-decoration: underline;
 }
